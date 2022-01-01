@@ -23,29 +23,41 @@ export default function Header() {
                     <input type="text" />
                 </div>
             </div>
-            <div className="header__middle">
+            <div className="header__center">
                 <div className="header__option">
-          <CottageIcon fontSize="large"/>
+                    <CottageIcon fontSize="large" />
                 </div>
                 <div className="header__option">
-          <GolfCourseIcon fontSize="large"/>
+                    <GolfCourseIcon fontSize="large" />
                 </div>
                 <div className="header__option">
-          <LoyaltyIcon fontSize="large"/>
+                    <LoyaltyIcon fontSize="large" />
                 </div>
                 <div className="header__option">
-          <StoreMallDirectoryIcon fontSize="large"/>
+                    <StoreMallDirectoryIcon fontSize="large" />
                 </div>
                 <div className="header__option">
-          <SupervisedUserCircleIcon fontSize="large"/>
+                    <SupervisedUserCircleIcon fontSize="large" />
                 </div>
             </div>
             <div className="header__right">
-              <div className="header__info">
-               <Avatar />
-               <h4>Batche Daka</h4>
-              </div>
+                <div className="header__info">
+                    <Avatar />
+                    <h4>Batche Daka</h4>
+                </div>
 
+                <IconButton>
+                    <AddIcon />
+                </IconButton>
+                <IconButton>
+                    <ForumIcon />
+                </IconButton>
+                <IconButton>
+                    <NotificationsIcon />
+                </IconButton>
+                <IconButton>
+                    <ExpandMoreIcon />
+                </IconButton>
             </div>
 
         </div>

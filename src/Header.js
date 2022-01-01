@@ -9,7 +9,7 @@ export default function Header() {
       </div>
       <div className="header__middle"></div>
       <div className="header__right"></div>
-      
+       
     </div>
   )
 }

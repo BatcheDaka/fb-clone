@@ -20,11 +20,12 @@ export default function Header() {
                 <img src="https://180dc.org/wp-content/uploads/2014/04/facebook-logo-facebook-logo-9.png" alt="facebook" />
                 <div className="header__input">
                     <ScreenSearchDesktopIcon />
-                    <input type="text" />
+                    <input placeholder="Search in Surat Tefter" type="text" />
                 </div>
             </div>
             <div className="header__center">
-                <div className="header__option">
+                <div className="header__option
+                header__option--active">
                     <CottageIcon fontSize="large" />
                 </div>
                 <div className="header__option">

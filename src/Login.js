@@ -17,7 +17,7 @@ auth.signInWithPopup(provider)
        user: result.user
    })
 
-    console.log(result.user);
+    
 })
 .catch((error) => alert(error.message));
     };

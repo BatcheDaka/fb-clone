@@ -12,8 +12,12 @@ function MessageSender() {
     const [{user}, dispatch] =useStateValue();
     const [input, setInput] = useState('');
     const [imageUrl, setImageUrl] = useState('');
+    
     const handleSubmit = (e) => {
         e.preventDefault();
+        if (!input) {
+            return;
+        }
         db.collection('posts').add({
             message: input,
             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
@@ -25,6 +29,7 @@ function MessageSender() {
 setInput('');
 setImageUrl('');
     };
+   
   return (
     <div className="messageSender">
       
@@ -42,8 +47,8 @@ setImageUrl('');
            onChange={e => setImageUrl(e.target.value)}
             placeholder={`image URL (Optional)`}
            />
-           <button onClick={handleSubmit} type="submit">
-               Hidden submit
+           <button onClick={handleSubmit}>
+               Post
            </button>
        </form>
       </div>
